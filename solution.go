@@ -21,13 +21,13 @@ type sides_number int
 
 func CalcSquare(sideLen float64, sidesNum sides_number) float64 {
 	if sidesNum == SidesTriangle {
-		return math.Pow(sideLen, 2) / 2
+		return math.Sqrt(4*math.Pow(sideLen, 2)-math.Pow(sideLen, 2)) / 4 * sideLen
 	}
 	if sidesNum == SidesSquare {
 		return math.Pow(sideLen, 2)
 	}
 	if sidesNum == SidesCircle {
-		return sideLen / 2 * math.Pi
+		return sideLen * math.Pi
 	} else {
 		return 0
 	}
