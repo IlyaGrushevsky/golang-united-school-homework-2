@@ -27,7 +27,7 @@ func CalcSquare(sideLen float64, sidesNum sides_number) float64 {
 		return math.Pow(sideLen, 2)
 	}
 	if sidesNum == SidesCircle {
-		return sideLen * math.Pi
+		return math.Pow(sideLen, 2) * math.Pi
 	} else {
 		return 0
 	}
